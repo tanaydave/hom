@@ -26,19 +26,19 @@ const SearchBar = ({ onSearch }) => {
   }, []);
 
   return (
-    <div ref={searchRef} className="relative mx-auto max-w-2xl">
-      <div className="relative">
+    <div ref={searchRef} className="relative mx-auto max-w-2xl ">
+      <div className="relative ">
         <input
           type="text"
-          className="w-full rounded-lg border-none bg-gray-100 px-6 py-4 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-          placeholder="Search our solutions..."
+          className="w-full rounded-lg border-2  bg-gray-100 px-6 py-4 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 border-blue-200"
+          placeholder="Search our users..."
           value={searchTerm}
           onChange={(e) => {
             setSearchTerm(e.target.value);
             handleSearch(e.target.value);
           }}
         />
-        <i className="fa fa-search absolute right-6 top-1/2 -translate-y-1/2 text-gray-400"></i>
+         <i className="fas fa-search absolute right-6 top-1/2 -translate-y-1/2 text-gray-400"></i>
       </div>
       {showResults && searchTerm && (
         <div className="absolute mt-2 w-full rounded-lg bg-white py-2 shadow-xl">

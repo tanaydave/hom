@@ -1,12 +1,13 @@
 // src/components/HeroSection.jsx
 import React from 'react';
+import heroImage from '../assets/view-3d-blooming-flowers.jpg'
 
-const HeroSection = () => {
+const Hero = () => {
   return (
     <div
     className="relative h-screen min-h-[600px] w-full bg-cover bg-center"
     style={{
-      backgroundImage: `url('https://public.readdy.ai/ai/img_res/c1c3baad18e27eda215cc224d4f837e8.jpg')`,
+      backgroundImage: `url(${heroImage})`,
     }}
   >
     <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-transparent">
@@ -29,4 +30,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+  export default Hero;
