@@ -6,6 +6,7 @@ import PriceTable from '../components/PriceTable';
 import ContactForm from '../components/ContactForm';
 import SearchBar from '../components/SearchBar';
 import Modal from '../components/Modal';
+import Loader from '../components/Loader';
 
 const Home = () => {
   const [users, setUsers] = useState([]);
